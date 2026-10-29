@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.1.0
+- REST API: the final `tracking_url` of our carriers is in the `extension_attributes` of every track returned by `GET /V1/shipment/:id` and `GET /V1/shipments`.
+- REST API: `GET /V1/threecommerce-shipping-carriers` and `GET /V1/threecommerce-shipping-carriers/:code` return the carriers list (code, title, tracking URL template, active, sort order). ACL resource: Shipping Carriers.
+- Setting "Hide Standard Carriers" (Stores > Configuration > Threecommerce Plugins > Shipping Carriers): remove Magento's standard carriers (UPS, FedEx, DHL, USPS, Custom Value...) from the dropdown of "Add Tracking Number". Your own carriers are always listed.
+
 ## 1.0.2
 - Fix: the carrier edit form stayed on an endless spinner (missing data provider, data scope and form template).
 

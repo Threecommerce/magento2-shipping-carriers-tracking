@@ -13,6 +13,8 @@ Manage your own list of carriers (BRT, GLS, SDA...) in the admin. They appear in
 - **Add tracking:** active carriers show in the carrier dropdown of "Add Tracking Number" on the shipment page and the title is filled in automatically.
 - **Links** to the carrier page in shipment emails, order and shipment pages (Luma, Hyvä, Breeze) and the admin; the store tracking popup shows the link too.
 - **URL placeholders:** `{tracking_number}`, `{postcode}`, `{country}` (shipping address) and `{order_number}`, URL-encoded.
+- **Hide standard carriers:** Stores → Configuration → Threecommerce Plugins → Shipping Carriers lets you remove Magento's own carriers (UPS, FedEx, DHL, USPS, Custom Value...) from the dropdown, so staff only see the ones you use.
+- **REST API:** `GET /V1/shipment/:id` and `GET /V1/shipments` return the final `tracking_url` in the `extension_attributes` of each track; `GET /V1/threecommerce-shipping-carriers[/:code]` returns the carriers list. Handy to keep an ERP or a WMS in sync.
 - Nine common Italian carriers are created inactive on install: enable the ones you use and check their URLs.
 - Carriers from other modules (UPS, FedEx...) configured in Stores → Configuration keep working as before.
 
@@ -40,7 +42,7 @@ bin/magento cache:flush
 
 ## Configuration
 
-Admin → **Sales → Operations → Shipping Carriers**. The carrier `code` is stored on the shipment track, so it cannot be edited after creation. Deleting a carrier keeps old tracking numbers but they lose the link: disable it instead.
+Admin → **Sales → Operations → Shipping Carriers**; standard carriers can be hidden from the dropdown in **Stores → Configuration → Threecommerce Plugins → Shipping Carriers**. The carrier `code` is stored on the shipment track, so it cannot be edited after creation. Deleting a carrier keeps old tracking numbers but they lose the link: disable it instead.
 
 ## Documentation and support
 
