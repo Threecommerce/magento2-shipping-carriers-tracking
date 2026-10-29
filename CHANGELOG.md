@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.3.1
+- Fix: the REST response of a carrier just created by `POST` had empty `created_at` and `updated_at`.
+
 ## 1.3.0
 - Created and Updated dates on every carrier: new columns in the grid (sortable, filterable by date range) and `created_at` / `updated_at` (UTC, read-only) in the REST API. Existing carriers get the date of the upgrade.
 
