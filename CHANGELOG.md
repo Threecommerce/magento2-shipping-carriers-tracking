@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.2.0
+- Setting "Enabled" (Stores > Configuration > Threecommerce Plugins > Shipping Carriers, default Yes). With No Magento behaves as if the module were not installed: no custom carriers in the dropdown, no carrier links, no `tracking_url` in the shipments REST API. The carriers list and its REST API stay available.
+- REST API: `POST /V1/threecommerce-shipping-carriers` creates a carrier or updates the one with the same code (fields you leave out keep their value), `DELETE /V1/threecommerce-shipping-carriers/:code` deletes it. Same validation as the admin.
+- Grid: inline editing (name, tracking URL, active, sort order) and mass actions Enable / Disable / Delete.
+- URL placeholders `{firstname}` and `{lastname}`; the `#TRACKNUM#`, `#POSTCODE#`, `#COUNTRYCODE#`, `#FIRSTNAME#` and `#LASTNAME#` forms are accepted too, so URLs from other tracking modules can be reused as they are.
+
 ## 1.1.0
 - REST API: the final `tracking_url` of our carriers is in the `extension_attributes` of every track returned by `GET /V1/shipment/:id` and `GET /V1/shipments`.
 - REST API: `GET /V1/threecommerce-shipping-carriers` and `GET /V1/threecommerce-shipping-carriers/:code` return the carriers list (code, title, tracking URL template, active, sort order). ACL resource: Shipping Carriers.
