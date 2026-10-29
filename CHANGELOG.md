@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.3.0
+- Created and Updated dates on every carrier: new columns in the grid (sortable, filterable by date range) and `created_at` / `updated_at` (UTC, read-only) in the REST API. Existing carriers get the date of the upgrade.
+
 ## 1.2.0
 - Setting "Enabled" (Stores > Configuration > Threecommerce Plugins > Shipping Carriers, default Yes). With No Magento behaves as if the module were not installed: no custom carriers in the dropdown, no carrier links, no `tracking_url` in the shipments REST API. The carriers list and its REST API stay available.
 - REST API: `POST /V1/threecommerce-shipping-carriers` creates a carrier or updates the one with the same code (fields you leave out keep their value), `DELETE /V1/threecommerce-shipping-carriers/:code` deletes it. Same validation as the admin.
