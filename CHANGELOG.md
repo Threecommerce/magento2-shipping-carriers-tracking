@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.3.2
+
+- Fix: a duplicate carrier code from the admin form now shows the intended message (the wrong exception was caught).
+
 ## 1.3.1
 - Fix: the REST response of a carrier just created by `POST` had empty `created_at` and `updated_at`.
 
