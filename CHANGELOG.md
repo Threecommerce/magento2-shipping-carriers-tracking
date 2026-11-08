@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.3.3
+
+- Chore: licenza dichiarata `proprietary` (allineata agli altri moduli Threecommerce, era MIT). Nessuna modifica al codice.
+
 ## 1.3.2
 
 - Fix: a duplicate carrier code from the admin form now shows the intended message (the wrong exception was caught).
