@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.3.4
+
+- Chore: aggiunto il file `LICENSE` nella radice del modulo. Nessuna modifica al codice.
+
 ## 1.3.3
 
 - Chore: licenza dichiarata `proprietary` (allineata agli altri moduli Threecommerce, era MIT). Nessuna modifica al codice.
