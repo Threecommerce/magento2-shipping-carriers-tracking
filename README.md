@@ -4,7 +4,7 @@ Manage your own list of carriers (BRT, GLS, SDA...) in the admin. They appear in
 
 ![Admin grid of shipping carriers with code, tracking URL, status and sort order](images/shipping-carriers-grid.png)
 
-**Compatibility:** Magento Open Source / Adobe Commerce 2.4.4 – 2.4.9 · Mage-OS 1.x / 3.x · PHP 8.1 – 8.4 · Themes: Luma, Hyvä, Breeze
+**Compatibility:** Magento Open Source / Adobe Commerce 2.4.4 – 2.4.9 · Mage-OS 1.x / 3.x · PHP 8.1 – 8.5 · Themes: Luma, Hyvä, Breeze
 **License:** free · **Current version:** see [Releases](../../releases)
 
 ## Features
@@ -26,7 +26,7 @@ Manage your own list of carriers (BRT, GLS, SDA...) in the admin. They appear in
 ## Requirements
 
 - Magento Open Source / Adobe Commerce 2.4.4+ or Mage-OS
-- PHP 8.1 – 8.4
+- PHP 8.1 – 8.5
 - Magento modules: Backend, Sales, Shipping, Ui
 
 ## Installation
